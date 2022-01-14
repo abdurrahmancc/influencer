@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+/*-------------------------------
+     navigation menu bar  
+ ------------------------------*/
+
+}
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: blue;
+
+}
+.navigation{
+    display: flex;
+    gap: 15px;
+}
+.navigation li{
+    list-style: none;
+}
+
+  /*------------------
+       Main Body 
+  ------------------*/
+
+
+  
