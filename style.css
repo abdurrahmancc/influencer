@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,12 +6,13 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-
+}
 /*-------------------------------
      navigation menu bar  
  ------------------------------*/
-
-}
+ header{
+     background-color: #0A0826;
+ }
 .top-menu{
     display: flex;
     justify-content: space-between;
@@ -20,12 +21,11 @@ body{
     color: white;
     margin: 0 auto;
     padding: 0 30px;
-    background-color: blue;
-
 }
 .navigation{
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 .navigation li{
     list-style: none;
@@ -34,6 +34,160 @@ body{
   /*------------------
        Main Body 
   ------------------*/
+.sections{
+    margin: 0px 200px 20px 200px;
+}
+  .influencer{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);  
+      height: 600px;
+  }
+  .influencer-photo{
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      position: relative;
+      top: 0px;  
+  }
+  .influencer-photo:hover{
+      top: 5px;
+  }
+  .influencer-photo img{
+    height: 400px;
+    width: 400px;
+  }
+  .influencer-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 100px;
+      position: relative;
+      top: 0px;
+  }
+  .influencer-content:hover{
+      top: 5px;
+  }
+  .influencer-title{
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 70px;
+      color: #3a3a3a;
+  }
+  .influencer-content p{
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      color: #3A3A3A;
+  }
+  .preebook-button button{
+    padding: 10px 30px;
+    background-color: #f3025a;
+    font-size: 20px;
+    color: white;
+    border: solid #E02C6D 1px;
+    border-radius: 41px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #920337 ;
+    position: relative;
+    top: 0px;
+  }
+  .preebook-button button:active{
+      top: 5px;
+  }
 
+/*--------------------------------
+         Product-section 
+--------------------------------*/
 
-  
+.Product-section{
+    margin: 0px 350px;
+}
+.products-title h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #3A3A3A;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+.all-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-row-gap: 60px;
+    border-radius: 5px;
+}
+.product-banar{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+.products{
+    width: 329px;
+    height: 476px;
+    padding: 17px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.product-info h2{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+}
+.price{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.color{
+    color: #FB8200;
+}
+.fas{
+    font-size: 10px;
+}
+.see-more{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin: 50px 40px 50px 0px;
+}
+.see-more a{
+    font-weight: 700;
+    color: rgba(224, 44, 109, 0.87);
+    text-decoration: none;
+}
+
+ /*---------------------------------
+          footer section 
+----------------------------------*/
+
+footer{
+    background-color: #0A0826;
+    height: 239px;
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    justify-content: center;
+}
+footer h2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+footer p, .social{
+    text-align: center;
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+}
+.social-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.social{
+    background-color: #181835;
+    padding: 10px;
+    border-radius: 50px;
+}
