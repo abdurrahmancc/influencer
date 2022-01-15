@@ -55,7 +55,7 @@ body{
       top: 0px;  
   }
   .influencer-photo:hover{
-      top: 10px;
+      top: 30px;
   }
   .influencer-photo img{
     height: 400px;
@@ -70,7 +70,7 @@ body{
       top: 0px;
   }
   .influencer-content:hover{
-      top: 10px;
+      top: 30px;
   }
   .influencer-title{
       font-size: 52px;
