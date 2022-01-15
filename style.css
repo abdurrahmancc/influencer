@@ -31,9 +31,10 @@ body{
     list-style: none;
 }
 
-  /*------------------
-       Main Body 
-  ------------------*/
+  /*--------------------------
+           Main Body
+       influencer-section 
+  --------------------------*/
 .sections{
     margin: 0px 200px 20px 200px;
 }
@@ -50,7 +51,7 @@ body{
       top: 0px;  
   }
   .influencer-photo:hover{
-      top: 5px;
+      top: 10px;
   }
   .influencer-photo img{
     height: 400px;
@@ -65,7 +66,7 @@ body{
       top: 0px;
   }
   .influencer-content:hover{
-      top: 5px;
+      top: 10px;
   }
   .influencer-title{
       font-size: 52px;
@@ -99,9 +100,6 @@ body{
          Product-section 
 --------------------------------*/
 
-.Product-section{
-    margin: 0px 350px;
-}
 .products-title h2{
     text-align: center;
     font-size: 28px;
@@ -116,6 +114,9 @@ body{
     justify-items: center;
     grid-row-gap: 60px;
     border-radius: 5px;
+    justify-content: center;
+
+
 }
 .product-banar{
     width: 300px;
@@ -127,7 +128,7 @@ body{
     height: 476px;
     padding: 17px 15px;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 .product-info h2{
     font-size: 28px;
@@ -153,6 +154,46 @@ body{
 .see-more a{
     font-weight: 700;
     color: rgba(224, 44, 109, 0.87);
+    text-decoration: none;
+}
+.product-info p{
+    color: #3A3A3A;
+}
+
+
+/*----------------------------------
+        shop detail 
+----------------------------------*/
+.shop-section{
+    background-color: #0a0826;
+
+}
+.shop-colums{
+    margin: 0 200px;
+}
+.shop-detail{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 50px;
+
+}
+.shop-detail h1, p, a{
+    color: white;
+}
+
+.brands a{
+    display: flex;
+    flex-direction: column;
+}
+.brands a{
+    text-decoration: none;
+}
+.our-detail{
+    display: flex;
+    flex-direction: column;
+}
+.our-detail a{
     text-decoration: none;
 }
 
@@ -191,3 +232,104 @@ footer p, .social{
     padding: 10px;
     border-radius: 50px;
 }
+
+
+  /*-----------------------------
+         Responsive css
+  Mobile, table, or mini devices 
+  ------------------------------*/
+
+  @media (max-width:990px) and (min-width:690px) {
+    .influencer{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .influencer-title{
+          font-size: 28px;
+          line-height: 50px;
+      }
+      .influencer-content>p{
+          font-size: 14px;
+          text-align: center;
+      }
+      .influencer-content{
+          align-items: center;
+      }
+      /* .Product section */
+      .all-products{
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          grid-column-gap: 40px;
+          grid-row-gap: 40px;
+      }
+      .products{
+          width: 300px;
+          height: 460px;
+      }
+      .product-banar img{
+        width: 270px;
+        height: 231px;
+        border-radius: 5px;
+    }
+  }
+  @media (max-width:850px){
+    .see-more{
+        margin-right: -100px;
+      }
+    .shop-detail{
+        justify-content: center;
+      }
+      .all-products{
+        justify-content: center;
+      }
+  }
+
+   /* mini mobile devices */
+   @media only screen and (max-width:690px) {
+    .compoany-name{
+        font-size: 12px;
+      }
+      .navigation{
+        gap: 8px;
+      }
+      .navigation li{
+          font-size: 10px;
+      }  
+      .influencer{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .influencer-title{
+          font-size: 28px;
+          line-height: 50px;
+      }
+      .influencer-content>p{
+          font-size: 14px;
+          text-align: center;
+      }
+      .influencer-content{
+          align-items: center;
+      }
+      /* .Product section */
+      .all-products{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+    }
+    .products{
+        width: 329px;
+        height: 476px;
+        padding: 17px 15px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.15);
+    }
+    .product-banar img{
+        width: 300px;
+        height: 256px;
+        border-radius: 5px;
+  }
+
+   }
