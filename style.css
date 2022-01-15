@@ -42,6 +42,7 @@ body{
       display: grid;
       grid-template-columns: repeat(2, 1fr);  
       height: 600px;
+      margin-bottom: 50px;
   }
   .influencer-photo{
       display: flex;
@@ -165,7 +166,7 @@ body{
         shop detail 
 ----------------------------------*/
 .shop-section{
-    background-color: #0a0826;
+    background-color: #0a0826af;
 
 }
 .shop-colums{
@@ -255,6 +256,10 @@ footer p, .social{
       }
       .influencer-content{
           align-items: center;
+          order: 1;
+      }
+      .influencer-photo{
+          order: 0;
       }
       /* .Product section */
       .all-products{
@@ -272,8 +277,18 @@ footer p, .social{
         height: 231px;
         border-radius: 5px;
     }
+    .shop-detail{
+        grid-column-gap: 30px;
+    }
   }
   @media (max-width:850px){
+    .influencer-content{
+        align-items: center;
+        order: 1;
+    }
+    .influencer-photo{
+        order: 0;
+    }
     .see-more{
         margin-right: -100px;
       }
@@ -312,6 +327,13 @@ footer p, .social{
       .influencer-content{
           align-items: center;
       }
+      .influencer-content{
+        align-items: center;
+        order: 1;
+    }
+    .influencer-photo{
+        order: 0;
+    }
       /* .Product section */
       .all-products{
         grid-template-columns: repeat(1, 1fr);
@@ -330,6 +352,26 @@ footer p, .social{
         width: 300px;
         height: 256px;
         border-radius: 5px;
+    }
+    .shop-detail{
+        grid-column-gap: 20px;
+    }
+
   }
 
-   }
+  /* maximum 480px is all devices */
+  @media (max-width:480px) {
+    .influencer-content{
+        align-items: center;
+        order: 1;
+    }
+    .influencer-photo{
+        order: 0;
+    }
+    .shop-detail{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .company-address, .brands, .our-detail{
+        margin-bottom: 50px;
+    }
+  }
