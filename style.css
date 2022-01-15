@@ -41,10 +41,13 @@ body{
   .influencer{
       display: grid;
       grid-template-columns: repeat(2, 1fr);  
-      height: 600px;
+      height: 800px;
       margin-bottom: 50px;
   }
   .influencer-photo{
+      background-image: url(images/Circle\ design.svg);
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
       justify-content: center;
       align-items: center; 
@@ -104,7 +107,7 @@ body{
 .products-title h2{
     text-align: center;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: bold;
     color: #3A3A3A;
     padding: 30px 0;
     margin-bottom: 30px;
@@ -150,7 +153,7 @@ body{
     display: flex;
     position: relative;
     justify-content: flex-end;
-    margin: 50px 40px 50px 0px;
+    margin: 50px 90px 50px 0px;
 }
 .see-more a{
     font-weight: 700;
