@@ -119,8 +119,6 @@ body{
     grid-row-gap: 60px;
     border-radius: 5px;
     justify-content: center;
-
-
 }
 .product-banar{
     width: 300px;
@@ -133,6 +131,10 @@ body{
     padding: 17px 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+.products:hover{
+    transform: scale(1.1); 
 }
 .product-info h2{
     font-size: 28px;
@@ -163,7 +165,6 @@ body{
 .product-info p{
     color: #3A3A3A;
 }
-
 
 /*----------------------------------
         shop detail 
@@ -284,6 +285,11 @@ footer p, .social{
         grid-column-gap: 30px;
     }
   }
+
+
+  /*  @media (max-width:850px) */
+
+
   @media (max-width:850px){
     .influencer-content{
         align-items: center;
